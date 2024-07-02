@@ -106,5 +106,9 @@
     {
         "name": "R",
         "icon": "https://img.icons8.com/fluency/48/000000/r-project.png"
+    },
+    {
+        "name": "jQuery",
+        "icon": "https://img.icons8.com/ios-filled/48/1169ae/jquery.png"
     }
 ]

@@ -475,7 +475,47 @@ header .navbar ul li a:hover {
   font-size: 1.8rem;
   transition: color 0.3s;
 }
-/* about media queries starts*/
+
+/* Fun Facts section */
+.fun-facts {
+  background: #fff;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.fun-facts h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.fun-facts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fun-facts ul li {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.fun-facts ul li:before {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #2506ad;
+}
+
+/* about media queries starts */
 @media screen and (max-width: 600px) {
   .about .row .image {
     margin-top: 2rem;
@@ -495,9 +535,13 @@ header .navbar ul li a:hover {
   .about .row .content .box-container {
     gap: 0;
   }
+  .fun-facts ul li {
+    font-size: 1.2rem;
+  }
 }
-/* about media queries ends*/
+/* about media queries ends */
 /* about section ends */
+
 
 
 
@@ -577,7 +621,7 @@ header .navbar ul li a:hover {
 
 /* education section starts */
 .education {
-  background: #e5ecfb;
+  background: #f5f0f8;
   min-height: 80vh;
   padding: 2rem 1rem;
 }
@@ -666,20 +710,44 @@ header .navbar ul li a:hover {
   margin-bottom: 1rem;
 }
 
-.education .box-container .box .content .courses {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-left: 1rem;
+.education .box-container .box .content .courses, .activities, .photos {
+  margin: 1rem 0;
 }
 
-.education .box-container .box .content .courses span {
+.education .box-container .box .content .courses h5, .activities h5, .photos h5 {
   font-size: 1.5rem;
+  color: #012970;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.education .box-container .box .content .courses ul, .activities ul {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+.education .box-container .box .content .courses ul li, .activities ul li {
+  font-size: 1.25rem;
   background: #FF5F05;
   color: #fff;
   padding: 0.5rem 0.7rem;
   border-radius: 0.3rem;
-  white-space: nowrap;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.education .box-container .box .content .photos .photo-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.education .box-container .box .content .photos .photo-grid img {
+  width: calc(50% - 0.5rem);
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 600px) {
@@ -705,11 +773,18 @@ header .navbar ul li a:hover {
     text-align: center;
   }
 
-  .education .box-container .box .content .courses {
+  .education .box-container .box .content .courses ul, .activities ul, .photos .photo-grid {
     justify-content: center;
+  }
+
+  .education .box-container .box .content .photos .photo-grid img {
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }
 /* education section ends */
+
+
 
 
 /* work section starts */
@@ -729,7 +804,7 @@ header .navbar ul li a:hover {
 }
 
 .work .heading span {
-  color: #57059e;
+  color: rgb(255, 230, 0);
 }
 
 .work .button-group {
@@ -924,6 +999,7 @@ header .navbar ul li a:hover {
 }
 /* work section ends */
 
+
 /* experience section starts */
 .experience .timeline {
   position: relative;
@@ -946,8 +1022,9 @@ header .navbar ul li a:hover {
   position: relative;
   background-color: inherit;
   width: 50%;
+  cursor: pointer;
 }
-/*circles on timeline*/
+/* circles on timeline */
 .experience .container::after {
   content: "\f0b1";
   position: absolute;
@@ -984,7 +1061,7 @@ header .navbar ul li a:hover {
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent #57059e;
 }
-/* arrows pointing left  */
+/* arrows pointing left */
 .experience .right::before {
   content: " ";
   height: 0;
@@ -1004,6 +1081,10 @@ header .navbar ul li a:hover {
   background-color: #57059e;
   position: relative;
   border-radius: 6px;
+  transition: background-color 0.3s;
+}
+.experience .content:hover {
+  background-color: #6e06be;
 }
 .experience .content .tag {
   font-size: 1.3rem;
@@ -1022,6 +1103,22 @@ header .navbar ul li a:hover {
 }
 .experience .content .desc p {
   font-size: 1.2rem;
+}
+.experience .content .details {
+  display: none;
+  padding: 1rem;
+  color: #fff;
+}
+.experience .content .details img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 1rem;
+  transition: transform 0.3s;
+}
+.experience .content .details img:hover {
+  transform: scale(1.05);
 }
 /* view all button */
 .morebtn {
@@ -1096,6 +1193,9 @@ header .navbar ul li a:hover {
 }
 /* experience media queries ends */
 /* experience section ends */
+
+
+
 
 
 /* contact section starts */

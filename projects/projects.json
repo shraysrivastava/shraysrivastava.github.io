@@ -1,7 +1,7 @@
 [
   {
     "name": "Illini Gym",
-    "desc": "iOS app for real-time gym occupancy monitoring, achieving 2,000+ users in 2 weeks. Built using React Native and Firebase.",
+    "desc": "iOS app for real-time gym occupancy monitoring, reaching 2,000+ users in 2 weeks and enhancing workout planning.",
     "image": "illini-dumbbell",
     "links": {
       "view": "https://apps.apple.com/us/app/illini-gym/id6476428062",
@@ -10,7 +10,7 @@
   },
   {
     "name": "MindMint",
-    "desc": "Educational app with AI-driven learning and teacher platform, awarded for NFT integration. Built using React Native and Firebase.",
+    "desc": "Educational app awarded by Stanford TreeHacks for AI-driven learning and innovative NFT integration, enhancing student engagement.",
     "image": "mindmint",
     "links": {
       "view": "https://devpost.com/software/learnboost-empowering-education-with-ai-nfts",
@@ -19,20 +19,21 @@
   },
   {
     "name": "NQL: SQL Chatbot",
-    "desc": "Advanced chatbot for effortless data retrieval through natural language interactions. Built using React and Java.",
+    "desc": "Advanced chatbot enabling effortless data retrieval, simplifying querying for non-technical users.",
     "image": "nql",
     "links": {}
   },
   {
     "name": "Code For Good",
-    "desc": "App for dismantling child trafficking networks with monitoring and educational resources. Built using React Native and Firebase.",
+    "desc": "App to dismantle child trafficking networks, featuring monitoring tools and educational resources for global protection.",
     "image": "codeforgood",
     "links": {}
   },
   {
     "name": "OranjBot",
-    "desc": "Chatbot providing instant support for developer inquiries, streamlining workflows. Built using HTML/CSS and Python.",
+    "desc": "AI Chatbot providing instant support for developer inquiries with internal company knowledge, streamlining workflows and reducing overhead.",
     "image": "oranjbot",
     "links": {}
   }
+  
 ]

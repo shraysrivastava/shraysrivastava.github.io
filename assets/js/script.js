@@ -227,8 +227,8 @@ $(document).ready(function () {
     srtop.reveal(".about .content .resumebtn", { delay: 200 });
   
     // scroll skills
-    srtop.reveal(".skills .container", { interval: 200 });
-    srtop.reveal(".skills .container .bar", { delay: 400 });
+    // srtop.reveal(".skills .container", { interval: 200 });
+    // srtop.reveal(".skills .container .bar", { delay: 400 });
   
     // scroll education
     srtop.reveal(".education .box", { interval: 200 });
@@ -237,8 +237,8 @@ $(document).ready(function () {
     srtop.reveal(".work .box", { interval: 1000 });
   
     // scroll experience
-    srtop.reveal(".experience .timeline", { delay: 400 });
-    srtop.reveal(".experience .timeline .container", { interval: 1000 });
+    // srtop.reveal(".experience .timeline", { delay: 400 });
+    // srtop.reveal(".experience .timeline .container", { interval: 1000 });
   
     // scroll contact
     srtop.reveal(".contact .container", { delay: 400 });
